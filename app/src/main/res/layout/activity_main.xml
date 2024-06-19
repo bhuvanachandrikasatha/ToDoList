@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:paddingStart="5dp"
+        android:text="To Do ..."
+        android:textColor="#D90166"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <SearchView
+        android:id="@+id/searchviewtext"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:contextClickable="true"
+        android:queryHint="Search"
+        android:searchIcon="@drawable/magnify"
+        android:background="@drawable/rounded_corner"
+        android:textSize="20dp"
+         />
+
+
+    <EditText
+        android:id="@+id/editTextTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingStart="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:hint="Add New Task"
+        android:textColorHint="@color/white"
+        android:minHeight="48dp" />
+
+
+    <Button
+        android:id="@+id/buttonAddTask"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#D90166"
+        android:text="Add" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="10dp"
+        android:paddingStart="0dp"/>
+
+
+</LinearLayout>
